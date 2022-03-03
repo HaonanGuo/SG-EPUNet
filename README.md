@@ -21,10 +21,10 @@ The code
 
 ### Usage
 Clone the repository:git clone https://github.com/HaonanGuo/SG-EPUNet.git
-1. Run [s2_Singletraining.py](https://github.com/HaonanGuo/SG-EPUNet/blob/main/s2_Singletraining.py) to train EPU-Net
-2. Run [s3_SGEPUNet_Initializer.py](https://github.com/HaonanGuo/SG-EPUNet/blob/main/s3_SGEPUNet_Initializer.py) to initial SG-EPUNet with EPUNet
-3. Run [s4_Multitraining.py](https://github.com/HaonanGuo/SG-EPUNet/blob/main/s4_Multitraining.py) to train the initialized SG-EPUNet
-4. Run [s5_Multipredicting.py](https://github.com/HaonanGuo/SG-EPUNet/blob/main/s5_Multipredicting.py) to predict the building update result
+1. Run [s1_training](https://github.com/HaonanGuo/SG-EPUNet/blob/main/s1_training.py) to train EPU-Net
+2. Run [s2_MultiECUNet_Initializer.py](https://github.com/HaonanGuo/SG-EPUNet/blob/main/s2_MultiECUNet_Initializer.py) to initial SG-EPUNet with EPUNet
+3. Run [s3_Multitraining.py](https://github.com/HaonanGuo/SG-EPUNet/blob/main/s3_Multitraining.py) to train the initialized SG-EPUNet
+4. Run [s4_predicting.py](https://github.com/HaonanGuo/SG-EPUNet/blob/main/s4_predicting.py) to predict the building update result
 
 Help
 ----
