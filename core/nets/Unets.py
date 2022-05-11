@@ -376,7 +376,7 @@ class SG_EPUNet(nn.Module):
             fseg=torch.sigmoid(chg.squeeze())*apredict_seg.squeeze()+\
                  bmask.squeeze()*(1-torch.sigmoid(chg.squeeze()))
             tloss+= self.bce(fseg, (amask>0).squeeze().float()).mean((1,2))
-            vloss= self.bce(apredict_seg.squeeze(),(fseg>0).squeeze().float()).mean((1,2))
+            vloss= self.bce(apredict_seg.squeeze(),torch.sigmoid(fseg).squeeze().float()).mean((1,2))
             floss=tloss*trainset.float()+vloss*(1-trainset.float())
         else:
             bmask = bmask.float()
